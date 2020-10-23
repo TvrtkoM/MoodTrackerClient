@@ -1,6 +1,7 @@
 import { EntityMetadataMap, EntityDataModuleConfig } from '@ngrx/data';
 import { TodoItemModel } from './models';
 import { Pluralizer } from '@ngrx/data';
+import { Injectable } from "@angular/core";
 
 export interface FilterPattern {
   ids: Array<number>;
@@ -20,6 +21,7 @@ const entityMetadata: EntityMetadataMap = {
 
 const pluralNames = { };
 
+@Injectable()
 export class TodoPluralizer extends Pluralizer {
   pluralize(name: string) {
     return name;
