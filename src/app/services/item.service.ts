@@ -8,7 +8,7 @@ import {
 import { TodoItemModel } from '../store/models';
 
 export const defaultDataServiceConfig: DefaultDataServiceConfig = {
-  root: 'http://localhost:3000',
+  root: 'http://0.0.0.0:3000',
   timeout: 3000
 };
 
