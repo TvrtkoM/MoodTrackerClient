@@ -5,11 +5,12 @@
 :host {
   display: grid;
   grid-template-columns: [cols-start] repeat(4, 1fr) [cols-end];
-  grid-gap: 0.5rem;
+  grid-gap: 1rem;
   border-top: 1px solid $light-gray;
   min-height: 5rem;
   padding-bottom: 0.25rem;
   padding-top: 0.25rem;
+  justify-items: center;
 }
 
 :host(:last-of-type) {
@@ -23,10 +24,12 @@
 
 .date {
   grid-column: cols-start / 1;
+  width: 75%;
 }
 
 .content {
   grid-column: 2 / cols-end;
+  width: 85%;
 }
 
 .touchable {
